@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="./css/my.css" rel="stylesheet">
+	<script src="./js/my.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<!-- <div class="header">
+			<div class="header-box">
+				<div class="home header-each" onclick="toggleDiv('div1')">
+					Home
+				</div>
+				<div class="about header-each" onclick="toggleDiv('div2')">
+					About
+				</div>
+				<div class="endlia header-each" onclick="toggleDiv('div3')">
+					Endangered plants of Inner Mongolia
+				</div>
+				<div class="virtual header-each" onclick="toggleDiv('div4')">
+					virtual planting
+				</div>
+			</div>
+			<div class="header-right">
+				<div class="headerSeach"><img src="./image/sousuo.png" alt="icon1"></div>
+				<div class="headerSeachIcon">
+					<button onclick="clickSign()">sign in</button>
+				</div>
+			</div>
+		</div> -->
+		<div id="div1" class="containerCon containerHome">
+			<div class="containerHomeOne">
+
+				<div class="header-box">
+					<div class="header-left">
+						<div class="home header-each" onclick="toggleDiv('div1')">
+							Home
+						</div>
+						<div class="about header-each" onclick="toggleDiv('div2')">
+							About
+						</div>
+						<div class="endlia header-each" onclick="toggleDiv('div3')">
+							Endangered plants of Inner Mongolia
+						</div>
+						<div class="virtual header-each" onclick="toggleDiv('div4')">
+							Virtual planting
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="headerSeach"><img src="./image/sousuo.png" alt="icon1"></div>
+						<div class="headerSeachIcon">
+							<button onclick="clickSign()">sign in</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="containerHomeTwo">
+				<div class="circle Cone" onmouseover="changeContentOne(this)" onmouseout="restoreContentOne(this)">1
+					Basic
+					information
+				</div>
+				<div class="circle Ctwo" onmouseover="changeContentTwo(this)" onmouseout="restoreContentTwo(this)">2
+					Function
+				</div>
+				<div class="circle Cthree" onmouseover="changeContentThree(this)"
+					onmouseout="restoreContentThree(this)">3
+					Aim
+				</div>
+				<div class="circle Cfour" onmouseover="changeContentFour(this)" onmouseout="restoreContentFour(this)">4
+					Rules
+				</div>
+				<div class="circle Cfive" onmouseover="changeContentFive(this)" onmouseout="restoreContentFive(this)">5
+					Advice
+				</div>
+				<!-- <div class="HomeTwoContent">Content</div> -->
+			</div>
+			<div class="contaninerHomeThree">
+				<div class="ThreeTextOne">
+					Basic
+				</div>
+				<div class="ThreeTextTwo">
+					information
+				</div>
+				<div class="ThreeTextThree">
+					This website is a virtual planting site of endangered plantsin Inner Mongolia, containing
+					information about
+					endangeredplants in inner Mongolia and virtual planting pages.
+				</div>
+			</div>
+			<div class="containerHomeFour">
+				<div class="FourTextOne">
+					"Perpetuating"the lifeof endangered plantsin Inher Mongolia in avirtual space(virtualplanting).
+				</div>
+				<div class="FourTextTwo">
+					Provide information onendangered piants inInner Mongolia forpiantresearch.education, urbanvegetation
+					planningand other industries
+				</div>
+				<div class="FourTextThree">
+					Integrate informationof endangered piantsin inner Mongolia foreasy access
+				</div>
+			</div>
+			<div class="containerHomeFive">
+				<div class="FiveTextOne">
+					<p>Perpetuate the life of endangered plants in InnerMongolia in virtual space.</p>
+					<p>Provide information on endangered plants in innerMongolia to those who need it.</p>
+					<p>Make the most of endangered plants.</p>
+				</div>
+			</div>
+			<div class="containerHomeSix">
+				<div class="SixTextOne">See plant information on page 3</div>
+				<div class="SixTextTwo">Choose planting accordingto plant information</div>
+				<div class="SixTextThree">Each person can choose onlyone plant per day</div>
+				<div class="SixTextFour">When planting, users need to writedown the connection between theplant and
+					themselves
+				</div>
+				<div class="SixTextFive">Can provide any endangeredplant information</div>
+				<div class="SixTextSix">Please take care ofendangered plants</div>
+			</div>
+			<div class="containerHomeSeven">
+				<div class="SevenTextOne">Please provide any suggestions</div>
+			</div>
+		</div>
+		<div id="div2" class="containerCon containerAbout hidden">
+
+			<div style="background-image: url(./image/about.png);width: 100%;height: 130%; background-repeat: no-repeat;
+			background-size: 100% 100%;">
+
+				<div class="header-box">
+					<div class="header-left">
+						<div class="home header-each" onclick="toggleDiv('div1')">
+							Home
+						</div>
+						<div class="about header-each" onclick="toggleDiv('div2')">
+							About
+						</div>
+						<div class="endlia header-each" onclick="toggleDiv('div3')">
+							Endangered plants of Inner Mongolia
+						</div>
+						<div class="virtual header-each" onclick="toggleDiv('div4')">
+							Virtual planting
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="headerSeach"><img src="./image/sousuo.png" alt="icon1"></div>
+						<div class="headerSeachIcon">
+							<button onclick="clickSign()">sign in</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+			<!-- <div class=" containerAboutOne">
+				<span>About Us</span>
+		</div>
+		<div class="containerAboutTwo">
+			<div class="AboutTwoLeft">
+			</div>
+			<div class="AboutTwoRight">
+				<div>
+					<p>Founder:Kitty</p>
+					<p>Gwnder:Female</p>
+					<p>Occupation:Student</p>
+					<p>Hobby:Studying endangered</p>
+					<p>plants in Inner Mongolia</p>
+					<p>Email:20021114@gmail.com</p>
+				</div>
+
+			</div>
+		</div> -->
+		</div>
+		<div id="div3" class="containerCon containerEndlia hidden">
+			<!-- <div class="containerEndliaText">
+			<p class="big">Endangered plants</p>
+			<p class="small">of Inner Mongolia</p>
+		</div> -->
+			<!-- 		<image src="./image/sb.png" style="height: 400px;
+		width: 100%;" /> -->
+
+
+
+			<div style="background-image: url(./image/sb.png);height: 700px;
+			width: 100%; background-repeat: no-repeat;
+			background-size:100%;">
+
+				<div class="header-box">
+					<div class="header-left">
+						<div class="home header-each" onclick="toggleDiv('div1')">
+							Home
+						</div>
+						<div class="about header-each" onclick="toggleDiv('div2')">
+							About
+						</div>
+						<div class="endlia header-each" onclick="toggleDiv('div3')">
+							Endangered plants of Inner Mongolia
+						</div>
+						<div class="virtual header-each" onclick="toggleDiv('div4')">
+							Virtual planting
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="headerSeach"><img src="./image/sousuo.png" alt="icon1"></div>
+						<div class="headerSeachIcon">
+							<button onclick="clickSign()">sign in</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="containerEndliaContent">
+				<div class="EndliaContentTitle">
+					<p>Plant details</p>
+				</div>
+				<div class="EndliaContentBox">
+					<div class="EndliaContentBoxOne">
+						<div class="OneBoxOne">
+							<div class="img">
+								<img src="./image/plant/1.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div>
+								<div class="box" onmouseover="expandBox(this)" onmouseout="shrinkBox(this)">
+									<p>Equisetum arvense L</p>
+								</div>
+								<!-- <p>Equisetum arvense L.</p>
+								<div class="hover">dbkejwsghdewjkhgdfsjkbfiwdl</div> -->
+							</div>
+						</div>
+						<div class="OneBoxTwo">
+							<div class="img">
+								<img src="./image/plant/2.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox2(this)" onmouseout="shrinkBox2(this)">
+								<p>Pteridium aquilinum L</p>
+							</div>
+						</div>
+						<div class="OneBoxThree">
+							<div class="img">
+								<img src="./image/plant/3.jpg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox3(this)" onmouseout="shrinkBox3(this)">
+								<p>Ephedra sinicaStapf is</p>
+							</div>
+						</div>
+					</div>
+					<div class="EndliaContentBoxTwo">
+						<div class="TwoBoxOne">
+							<div class="img">
+								<img src="./image/plant/4.jpg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox4(this)" onmouseout="shrinkBox4(this)">
+								<p>Ephedra rhytidosperma</p>
+							</div>
+						</div>
+						<div class="TwoBoxTwo">
+							<div class="img">
+								<img src="./image/plant/5.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox5(this)" onmouseout="shrinkBox5(this)">
+								<p>Ephedra equisetina Bunge</p>
+							</div>
+						</div>
+					</div>
+					<div class="EndliaContentBoxOne">
+						<div class="OneBoxOne">
+							<div class="img">
+								<img src="./image/plant/6.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox6(this)" onmouseout="shrinkBox6(this)">
+								<p>Ephedra monosperma J</p>
+							</div>
+						</div>
+						<div class="OneBoxTwo">
+							<div class="img">
+								<img src="./image/plant/7.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox7(this)" onmouseout="shrinkBox7(this)">
+								<p>Ephedra intermedia</p>
+							</div>
+						</div>
+						<div class="OneBoxThree">
+							<div class="img">
+								<img src="./image/plant/8.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox8(this)" onmouseout="shrinkBox8(this)">
+								<p>Rheumfranzenbachii Munt</p>
+							</div>
+						</div>
+					</div>
+					<div class="EndliaContentBoxFour">
+						<div class="OneBoxOne">
+							<div class="img">
+								<img src="./image/plant/9.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox9(this)" onmouseout="shrinkBox9(this)">
+								<p>Calligonum alaschanicumLosinsk</p>
+							</div>
+						</div>
+						<div class="OneBoxTwo">
+							<div class="img">
+								<img src="./image/plant/10.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox10(this)" onmouseout="shrinkBox10(this)">
+								<p>Calligonum mongolicum</p>
+							</div>
+						</div>
+						<div class="OneBoxThree">
+							<div class="img">
+								<img src="./image/plant/11.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox11(this)" onmouseout="shrinkBox11(this)">
+								<p>Atraphaxis frutescens</p>
+							</div>
+						</div>
+					</div>
+					<div class="EndliaContentBoxFive">
+						<div class="FiveBoxOne">
+							<div class="FiveBoxOneOne">
+								<div class="img">
+									<img src="./image/plant/12.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox12(this)" onmouseout="shrinkBox12(this)">
+									<p>Atraphaxis bracteata</p>
+								</div>
+							</div>
+							<div class="FiveBoxOneTwo">
+								<div class="img">
+									<img src="./image/plant/13.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox13(this)" onmouseout="shrinkBox13(this)">
+									<p>Fistulae, Chinese</p>
+								</div>
+							</div>
+							<div class="FiveBoxOneThree">
+								<div class="img">
+									<img src="./image/plant/14.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox14(this)" onmouseout="shrinkBox14(this)">
+									<p>Haloxylon ammodendron</p>
+								</div>
+							</div>
+						</div>
+						<div class="FiveBoxTwo">
+							<div class="FiveBoxTwoOne">
+								<div class="img">
+									<img src="./image/plant/15.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox15(this)" onmouseout="shrinkBox15(this)">
+									<p>Anabasis brevifolia C</p>
+								</div>
+							</div>
+							<div class="FiveBoxTwoTwo">
+								<div class="img">
+									<img src="./image/plant/16.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox16(this)" onmouseout="shrinkBox16(this)">
+									<p>Gymnocarpos przewalski</p>
+								</div>
+							</div>
+						</div>
+						<div class="FiveBoxThree">
+							<div class="FiveBoxThreeOne">
+								<div class="img">
+									<img src="./image/plant/17.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox17(this)" onmouseout="shrinkBox17(this)">
+									<p>Pseudostellaria heterophylla</p>
+								</div>
+							</div>
+							<div class="FiveBoxThreeTwo">
+								<div class="img">
+									<img src="./image/plant/18.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox18(this)" onmouseout="shrinkBox18(this)">
+									<p>Silver bupleurum</p>
+								</div>
+							</div>
+							<div class="FiveBoxThreeThree">
+								<div class="img">
+									<img src="./image/plant/19.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox19(this)" onmouseout="shrinkBox19(this)">
+									<p>Female vegetable</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="EndliaContentBoxFour">
+						<div class="OneBoxOne">
+							<div class="img">
+								<img src="./image/plant/20.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox20(this)" onmouseout="shrinkBox20(this)">
+								<p>Paeonia lactiflora</p>
+							</div>
+						</div>
+						<div class="OneBoxTwo">
+							<div class="img">
+								<img src="./image/plant/21.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox21(this)" onmouseout="shrinkBox21(this)">
+								<p>Trollius chinensis</p>
+							</div>
+						</div>
+						<div class="OneBoxThree">
+							<div class="img">
+								<img src="./image/plant/22.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox22(this)" onmouseout="shrinkBox22(this)">
+								<p>Trollius ledebouriiRcS</p>
+							</div>
+						</div>
+					</div>
+					<div class="EndliaContentBoxFive">
+						<div class="FiveBoxTwo">
+							<div class="FiveBoxTwoOne">
+								<div class="img">
+									<img src="./image/plant/23.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox23(this)" onmouseout="shrinkBox23(this)">
+									<p>Xingan Cohosh</p>
+								</div>
+							</div>
+							<div class="FiveBoxTwoTwo">
+								<div class="img">
+									<img src="./image/plant/24.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox24(this)" onmouseout="shrinkBox24(this)">
+									<p>Aconitum,ranunculus</p>
+								</div>
+							</div>
+						</div>
+						<div class="FiveBoxOne" style="margin-right: 10px;">
+							<div class="FiveBoxOneOne">
+								<div class="img">
+									<img src="./image/plant/25.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox25(this)" onmouseout="shrinkBox25(this)">
+									<p>Aconitum yinschanicum Y</p>
+								</div>
+							</div>
+							<div class="FiveBoxOneTwo">
+								<div class="img">
+									<img src="./image/plant/26.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox26(this)" onmouseout="shrinkBox26(this)">
+									<p>Anemone sylvestrisL</p>
+								</div>
+							</div>
+							<div class="FiveBoxOneThree">
+								<div class="img">
+									<img src="./image/plant/27.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox27(this)" onmouseout="shrinkBox27(this)">
+									<p>Pulsatilla chinensis</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="FiveBoxThree">
+							<div class="FiveBoxThreeOne">
+								<div class="img">
+									<img src="./image/plant/28.png" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox28(this)" onmouseout="shrinkBox28(this)">
+									<p>Clematis fruticosaTurcz</p>
+								</div>
+							</div>
+							<div class="FiveBoxThreeTwo">
+								<div class="img">
+									<img src="./image/plant/29.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox29(this)" onmouseout="shrinkBox29(this)">
+									<p>Berberis caroli</p>
+								</div>
+							</div>
+							<div class="FiveBoxThreeThree">
+								<div class="img">
+									<img src="./image/plant/30.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox30(this)" onmouseout="shrinkBox30(this)">
+									<p>Pugionium cornutum</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="EndliaContentBoxSix">
+						<div class="SixBoxOne">
+							<div class="img">
+								<img src="./image/plant/31.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox31(this)" onmouseout="shrinkBox31(this)">
+								<p>Pugionium calcaratumKom</p>
+							</div>
+						</div>
+						<div class="SixBoxTwo">
+							<div class="img">
+								<img src="./image/plant/32.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox32(this)" onmouseout="shrinkBox32(this)">
+								<p>Prunus mongolica</p>
+							</div>
+						</div>
+					</div>
+					<div class="EndliaContentBoxSeven">
+						<div class="OneBoxOne">
+							<div class="img">
+								<img src="./image/plant/33.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox33(this)" onmouseout="shrinkBox33(this)">
+								<p>Pedunculus amygdalis</p>
+							</div>
+						</div>
+						<div class="OneBoxTwo">
+							<div class="img">
+								<img src="./image/plant/34.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox34(this)" onmouseout="shrinkBox34(this)">
+								<p>Sophoraalopecuroidesit</p>
+							</div>
+						</div>
+						<div class="OneBoxThree">
+							<div class="img">
+								<img src="./image/plant/35.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox35(this)" onmouseout="shrinkBox35(this)">
+								<p>Sophora flavescens</p>
+							</div>
+						</div>
+					</div>
+					<div class="EndliaContentBoxFour">
+						<div class="OneBoxOne">
+							<div class="img">
+								<img src="./image/plant/36.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox36(this)" onmouseout="shrinkBox36(this)">
+								<p>Chesniella mongolica</p>
+							</div>
+						</div>
+						<div class="OneBoxTwo">
+							<div class="img">
+								<img src="./image/plant/37.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox37(this)" onmouseout="shrinkBox37(this)">
+								<p>Astragalus membraniculus</p>
+							</div>
+						</div>
+						<div class="OneBoxThree">
+							<div class="img">
+								<img src="./image/plant/38.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox38(this)" onmouseout="shrinkBox38(this)">
+								<p>AstragalusmongholicusThe</p>
+							</div>
+						</div>
+					</div>
+					<div class="EndliaContentBoxFour">
+						<div class="OneBoxOne">
+							<div class="img">
+								<img src="./image/plant/39.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox39(this)" onmouseout="shrinkBox39(this)">
+								<p>Hedysarum alpinum</p>
+							</div>
+						</div>
+						<div class="OneBoxTwo">
+							<div class="img">
+								<img src="./image/plant/40.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox40(this)" onmouseout="shrinkBox40(this)">
+								<p>Astragaus complanatusIt</p>
+							</div>
+						</div>
+						<div class="OneBoxThree">
+							<div class="img">
+								<img src="./image/plant/41.png" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox41(this)" onmouseout="shrinkBox41(this)">
+								<p>Astragalus</p>
+							</div>
+						</div>
+					</div>
+					<div class="EndliaContentBoxTwo">
+						<div class="TwoBoxTwo">
+							<div class="img">
+								<img src="./image/plant/42.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox42(this)" onmouseout="shrinkBox42(this)">
+								<p>Astragalus alaschanus</p>
+							</div>
+						</div>
+						<div class="TwoBoxOne">
+							<div class="img">
+								<img src="./image/plant/43.jpeg" alt="" width="100%" height="100%">
+							</div>
+							<div class="box" onmouseover="expandBox43(this)" onmouseout="shrinkBox43(this)">
+								<p>0xytropisneimonggolica</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="EndliaContentBoxEight">
+						<div class="EightBoxOne">
+							<div class="oneClassOne">
+								<div class="img">
+									<img src="./image/plant/44.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox44(this)" onmouseout="shrinkBox44(this)">
+									<p>Ephedra intermedia</p>
+								</div>
+							</div>
+							<div class="oneClassTwo">
+								<div class="img">
+									<img src="./image/plant/45.png" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox45(this)" onmouseout="shrinkBox45(this)">
+									<p>Rheumfranzenbachii Munt</p>
+								</div>
+							</div>
+							<div class="oneClassThree">
+								<div class="img">
+									<img src="./image/plant/46.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox46(this)" onmouseout="shrinkBox46(this)">
+									<p>Calligonum alaschanicumLosinsk</p>
+								</div>
+							</div>
+						</div>
+						<div class="EightBoxTwo">
+							<div class="EightBoxTwoTwo1">
+								<div class="EightBoxOneOne">
+									<div class="img">
+										<img src="./image/plant/47.jpeg" alt="" width="100%" height="100%">
+									</div>
+									<div class="box" onmouseover="expandBox47(this)" onmouseout="shrinkBox47(this)">
+										<p>Calligonum mongolicum</p>
+									</div>
+								</div>
+								<div class="EightBoxOneTwo">
+									<div class="img">
+										<img src="./image/plant/48.png" alt="" width="100%" height="100%">
+									</div>
+									<div class="box" onmouseover="expandBox48(this)" onmouseout="shrinkBox48(this)">
+										<p>Atraphaxis frutescens</p>
+									</div>
+								</div>
+							</div>
+							<div class="EightBoxTwoTwo">
+								<div class="img">
+									<img src="./image/plant/49.png" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox49(this)" onmouseout="shrinkBox49(this)">
+									<p>Atraphaxis bracteata</p>
+								</div>
+							</div>
+							<div class="EightBoxThree">
+								<div class="img">
+									<img src="./image/plant/50.jpeg" alt="" width="100%" height="100%">
+								</div>
+								<div class="box" onmouseover="expandBox50(this)" onmouseout="shrinkBox50(this)">
+									<p>Fistulae, Chinese</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+
+					</div>
+				</div>
+			</div>
+			<div class="containerEndliaBottom">
+				<p onclick="redirectToOtherPage()" style="background-color: #eeeeee; border-radius: 20px;">Other plant
+					information</p>
+			</div>
+		</div>
+		<div id="div4" class="containerCon containerAbout hidden">
+			<!-- <image src="./image/virtual.png" style="height: 100%;width: 100%; background-repeat: no-repeat;
+			background-size: 100% 100%;" /> -->
+			<div style="background-image: url(./image/virtual.png);height: 70%;width: 100%; background-repeat: no-repeat;
+			background-size: 100% 100%;">
+				<div class="header-box">
+					<div class="header-left">
+						<div class="home header-each" onclick="toggleDiv('div1')">
+							Home
+						</div>
+						<div class="about header-each" onclick="toggleDiv('div2')">
+							About
+						</div>
+						<div class="endlia header-each" onclick="toggleDiv('div3')">
+							Endangered plants of Inner Mongolia
+						</div>
+						<div class="virtual header-each" onclick="toggleDiv('div4')">
+							Virtual planting
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="headerSeach"><img src="./image/sousuo.png" alt="icon1"></div>
+						<div class="headerSeachIcon">
+							<button onclick="clickSign()">sign in</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="containerVirtualText">
+
+			</div> -->
+			<div style="text-align: center;font-size: 50px"><a href="final.html" target="_self"
+					style="text-decoration: none; color: black;">Click to open the map</a></div>
+		</div>
+	</div>
+
+	<script>
+	</script>
+</body>
+
+</html>

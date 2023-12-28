@@ -1,0 +1,743 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	/* overflow-x: hidden;   */
+	/* overflow: hidden; */
+	
+}
+
+/* ------------------- */
+.header-box {  
+	display: flex;  
+	justify-content: space-between;  
+	
+  }  
+	
+.header-left{
+	width: 90%;
+	display: flex;
+	padding-left: 100px;
+}
+
+
+  .header-each {  
+	height: 80px;
+	/* width: 100%; */
+	line-height: 80px;
+	/* flex: 1; */
+	margin-left: 100px;
+	text-shadow: 3px 3px 3px #ccc;
+	/* display: flex; */
+	align-items: center;
+	font-size: 15px;
+	cursor: pointer;
+	/* justify-content: center; */
+  } 
+
+  .header-box .header-right{
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header-box .header-right .headerSeach{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header-box .header-right .headerSeachIcon{
+	display:flex;
+	margin-left: 20px;
+}
+.header-box .header-right .headerSeachIcon button{
+	background-color: #eeeeee;
+	border: none; /* 去掉边框 */
+	padding: 10px 20px; /* 设置内边距 */
+	text-align: center; /* 文字居中 */
+	text-decoration: none; /* 去掉下划线 */
+	display: inline-block;
+	font-size: 16px; /* 设置字体大小 */
+	margin: 4px 2px; /* 设置外边距 */
+	cursor: pointer; /* 鼠标指针形状 */
+	border-radius: 14px; /* 设置圆角 */
+}
+.header-box .header-right .headerSeachIcon button:hover{
+	background-color: #bbbbbb; /* 设置悬停时的背景颜色 */
+}
+.header-box .header-right .headerSeachIcon button:active {
+	background-color: #cccccc; /* 设置悬停时的背景颜色 */
+}
+
+/* ------------------- */
+
+.hidden {
+	display: none;
+}
+.container .containerHome .containerHomeOne{
+	height:650px;
+	background-image: url(../image/newFlower.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+
+
+	/* height:650px;
+	width:100%;
+	background: #008000d9;
+	background-image: url(../image/newFlower.png);
+	display: flex;
+	align-items: center;
+	font-size: 100px;
+	position: relative;
+	line-height: 80px;
+	justify-content: start;
+	background-size: cover;  
+	background-position: center;   */
+
+}
+.spanOne{
+	font-family: '方正徐静蕾行书_简', sans-serif; 
+	letter-spacing: 2px;  
+	font-weight: bold; 
+	font-size: 200px;
+	margin-right: 10px;
+  
+}
+.spanTow{
+	letter-spacing: 2px;  
+	font-weight: bold; 
+	font-size: 200px;
+	margin-right: 10px; 
+	right:150px;
+	/*  
+     width: 100%;  
+    height: 100%;  
+	z-index: 9999;
+	text-align: center;
+	top: 50%;
+    bottom: 50%;
+    margin-left: -100px;
+    margin-top: -100px; 
+   */
+}
+.container .containerHome .containerHomeOne .HomeOneIcon{
+ 	width: 50%;
+	margin: 0 auto;
+	z-index: 999; 
+	background-image: url(../image/newFlower.png);
+	position: absolute;
+	text-align: center;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-size: 100% 100%; 
+}
+.container .containerHome .containerHomeOne .HomeOneLeft{
+	background: #008000d9;
+	flex: 1;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	z-index: 990;
+	/* margin-left: 10px; */
+}
+.container .containerHome .containerHomeOne .HomeOneRight{
+	background: #faf3f3;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+}
+.container .containerHome .containerHomeTwo{
+	height:800px;
+	width:100%;
+	background-color: #69b92f;
+	position: relative;
+	background-image: url(../image/HomeTwo.png);
+	background-size: 100% 100%;
+
+}
+
+.circle {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: lightblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.3s, opacity 0.3s;
+}
+.circle:hover {
+	transform: scale(1.5);
+	opacity: 1;
+}
+.container .containerHome .containerHomeTwo .Cone{
+	background-color: #92db36;
+	top: 10%;
+	left: 6.8%;
+}
+.container .containerHome .containerHomeTwo .Ctwo{
+	background-color: #d5ff7a;
+	top: 10%;
+	left: 34.8%;
+}
+.container .containerHome .containerHomeTwo .Cthree{
+	background-color: #51e00e;
+	right: 22.6%;
+	top: 18%;
+}
+.container .containerHome .containerHomeTwo .Cfour{
+	background-color: #90f35e;
+	bottom: 13%;
+	right: 40%;
+}
+.container .containerHome .containerHomeTwo .Cfive{
+	background-color: #e7fa10;
+	bottom: 15%;
+	right: 9.8%;
+}
+/* .container .containerHome .containerHomeTwo .HomeTwoContent{
+	position: absolute;
+	bottom: 2%;
+	left: 2%;
+	font-size: 170px;
+	font-weight: bold;
+} */
+.container .containerHome .contaninerHomeThree{
+	height:800px;
+	width:100%;
+	background-image: url(../image/1.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.container .containerHome .contaninerHomeThree>div{
+	position: absolute;
+}
+.container .containerHome .contaninerHomeThree .ThreeTextOne{
+	top: 16%;
+    left: 30%;
+    color: #fff;
+    font-size: 5vw;
+}
+.container .containerHome .contaninerHomeThree .ThreeTextTwo{
+	top: 31%;
+    left: 30%;
+    color: #fff;
+    font-size: 5vw;
+}
+.container .containerHome .contaninerHomeThree .ThreeTextThree{
+	top: 54%;
+    left: 30%;
+    font-size: 2vw;
+    width: 61%;
+}
+.container .containerHome .containerHomeFour{
+	height:800px;
+	width:100%;
+	background-image: url(../image/2.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.container .containerHome .containerHomeFour>div{
+	position: absolute;
+
+}
+.container .containerHome .containerHomeFour .FourTextOne{
+	    top: 39%;
+    left: 5%;
+    width: 19%;
+    font-size: 1.5vw;
+}
+.container .containerHome .containerHomeFour .FourTextTwo{
+	top: 39%;
+    left: 27%;
+    width: 19%;
+    font-size: 1.3vw;
+}
+.container .containerHome .containerHomeFour .FourTextThree{
+	top: 39%;
+    left: 50%;
+    width: 19%;
+    font-size: 1.5vw;
+}
+.container .containerHome .containerHomeFive{
+	height:800px;
+	width:100%;
+	background-image: url(../image/3.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.container .containerHome .containerHomeFive>div{
+	position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 34%;
+    font-size: 1.6vw;
+    width: 60%;
+}
+.container .containerHome .containerHomeSix{
+	height:800px;
+	width:100%;
+	background-image: url(../image/4.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.container .containerHome .containerHomeSix>div{
+	position: absolute;
+	font-size: 1.5vw;
+}
+.container .containerHome .containerHomeSix .SixTextOne{
+    top: 36%;
+    left: 8%;
+}
+.container .containerHome .containerHomeSix .SixTextTwo{
+	top: 36%;
+    left: 42%;
+    width: 26%;
+    text-align: center;
+}
+.container .containerHome .containerHomeSix .SixTextThree{
+	top: 56%;
+    left: 4%;
+    width: 30%;
+    text-align: center;
+}
+.container .containerHome .containerHomeSix .SixTextFour{
+	top: 56%;
+    left: 41%;
+    width: 30%;
+    text-align: center;
+}
+.container .containerHome .containerHomeSix .SixTextFive{
+	top: 79%;
+    left: 4%;
+    width: 30%;
+    text-align: center;
+}
+.container .containerHome .containerHomeSix .SixTextSix{
+	top: 81%;
+    left: 42%;
+    width: 30%;
+}
+.container .containerHome .containerHomeSeven{
+	height:800px;
+	width:100%;
+	background-image: url(../image/5.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.container .containerHome .containerHomeSeven>div{
+	position: absolute;
+    top: 50%;
+    left: 45%;
+    font-size: 2vw;
+}
+/* About */
+.container .containerAbout{
+	width: 100%;
+	height: 1000px;
+	background-color: rgb(255 252 173);
+}
+.container .containerAbout .containerAboutOne{
+	height: 300px;
+	width: 100%;
+	border-top: 1px solid #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bolder;
+	font-size: 103px;
+}
+.container .containerAbout .containerAboutOne span{
+
+}
+.container .containerAbout .containerAboutTwo{
+	display: flex;
+  height: 700px;
+  width: 97%;
+  margin: 0 auto;
+  /* border: 25px solid #77a752; */
+	background: url(../image/beijing.png) no-repeat;
+  border-radius: 14%;
+}
+.container .containerAbout .containerAboutTwo .AboutTwoLeft{
+	margin-top: 30px;
+	margin-left: 70px;
+	width: 40%;
+	background-image: url(../image/6.png);
+	background-size: 130% 100%;
+}
+.container .containerAbout .containerAboutTwo .AboutTwoRight{
+	margin-top: 40px;
+	font-size: 20px;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-left: 8%;
+}
+.container .containerEndlia{
+	width: 100%;
+	height: 100%;
+	background-color: #faf3f3;
+}
+.container .containerEndlia .containerEndliaText{
+	height: 400px;
+	width: 100%;
+	border-top: 1px solid #000;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	font-weight: bolder;
+	font-size: 103px;
+	border-bottom: 5px solid #cccccc;
+}
+.container .containerEndlia .containerEndliaText .big{
+margin-bottom: 0;
+}
+.container .containerEndlia .containerEndliaText .small{
+	font-size: 14px;
+}
+.container .containerEndlia .containerEndliaContent{
+	width: 100;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentTitle{
+	height: 100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+}
+
+.container .containerEndlia .containerEndliaContent .EndliaContentTitle>p{
+	width: auto;
+	height: 70%;
+	background-color: #eeeeee;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	padding: 0 200px;
+}
+
+.container .containerEndlia .containerEndliaContent .EndliaContentBox{
+	width: 94%;
+	margin: 0 auto;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxOne{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxOne>div{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+	margin: 0 10px;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxOne .img{
+	height: 75%;
+	width: 100%;
+	border-radius: 40px;
+	/* 改 */
+	/* border: 1px solid #000; */
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxOne>div .hover{
+	display: none;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxTwo{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxTwo>div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+	margin: 0 10px;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxTwo .TwoBoxOne{
+	width:32%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+	margin: 0 10px;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxTwo .TwoBoxTwo{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+	margin: 0 10px;
+}
+
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .img{
+	height: 75%;
+	width: 100%;
+	border-radius: 40px;
+	/* border: 1px solid #000; */
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .hover{
+	display: none;
+}
+
+
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxFour{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxFour>div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+	margin: 0 10px;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxFour .OneBoxOne{
+	width:32%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+	margin: 0 10px;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxFour .img{
+	height: 75%;
+	width: 100%;
+	border: 1px solid #000;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxFour .OneBoxOne{
+	width: 30%;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxFour .OneBoxTwo{
+	width: 35%;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxFour .OneBoxThree{
+	width: 35%;
+}
+.container .containerEndlia .containerEndliaBottom{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+}
+.container .containerEndlia .EndliaContentBoxFive{
+	width: 100%;
+	display: flex;
+	height: 900px;
+	align-items: center;
+	justify-content: center;
+}
+.container .containerEndlia .EndliaContentBoxFive>div{
+	flex: 1;	
+	height: 100%;
+}
+.container .containerEndlia .EndliaContentBoxFive .FiveBoxOne{
+	height: 100%;
+}
+.container .containerEndlia .EndliaContentBoxFive .FiveBoxOne>div{
+	height: 33%;
+	text-align: center;
+}
+.container .containerEndlia .EndliaContentBoxFive .img{
+	height: 75%;
+	width: 100%;
+	border: 1px solid #000;
+	
+}
+.container .containerEndlia .EndliaContentBoxFive .FiveBoxTwo{
+	height: 100%;
+	margin: 0 10px;
+}
+.container .containerEndlia .EndliaContentBoxFive .FiveBoxTwo>div{
+	height: 51.8%;
+	text-align: center;
+}
+.container .containerEndlia .EndliaContentBoxFive .FiveBoxThree{
+	height: 100%;
+}
+.container .containerEndlia .EndliaContentBoxFive .FiveBoxThree>div{
+	height: 33%;
+	text-align: center;
+}
+.container .containerEndlia .EndliaContentBoxSix{
+	width: 100%;
+	display: flex;
+	height: 300px;
+	align-items: center;
+	justify-content: center;
+}
+.container .containerEndlia .EndliaContentBoxSix>div{
+	flex: 1;
+	height: 100%;
+	margin: 0 10px;
+}
+.container .containerEndlia .EndliaContentBoxSix .img{
+	height: 75%;
+	width: 100%;
+	border: 1px solid #000;
+	
+}
+
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxSeven{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxSeven>div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+	margin: 0 10px;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxSeven .OneBoxOne{
+	width:32%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+	margin: 0 10px;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxSeven .img{
+	height: 75%;
+	width: 100%;
+	border: 1px solid #000;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxSeven .OneBoxOne{
+	width: 40%;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxSeven .OneBoxTwo{
+	width: 40%;
+}
+.container .containerEndlia .containerEndliaContent .EndliaContentBox .EndliaContentBoxSeven .OneBoxThree{
+	width: 20%;
+}
+.EndliaContentBoxEight{
+	width: 100%;
+	height: 900px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.EndliaContentBoxEight .EightBoxOne{
+	width: 40%;
+	height: 100%;
+}
+.EndliaContentBoxEight .EightBoxOne .oneClassOne{
+	height: 25%;
+}
+.EndliaContentBoxEight .EightBoxOne .oneClassTwo{
+	height: 50%;
+}
+.EndliaContentBoxEight .EightBoxOne .oneClassThree{
+	height: 25%;
+}
+.EndliaContentBoxEight .EightBoxTwo{
+	flex: 1;
+	margin-left: 10px;
+	height: 100%;
+}
+/* .EndliaContentBoxEight .EightBoxTwoTwo{
+	display: flex;
+} */
+.EndliaContentBoxEight .EightBoxTwoTwo1>div{
+	flex: 1;
+	height: 100%;
+}
+.EightBoxTwoTwo1{
+	height: 30%;
+    display: flex
+}
+.EightBoxTwoTwo1>div{
+	flex: 1;
+	margin: 0 10px
+}
+.EightBoxTwoTwo{
+	height: 35%;
+	margin:0 10px;
+	text-align: center;
+}
+.EightBoxThree{
+	height: 35%;
+	margin: 0 10px;
+	text-align: center;
+}
+.containerVirtual{
+	width: 100%;
+	height: 900px;
+	border-top: 1px solid #000;
+	background-color: #faf3f3;
+}
+.containerVirtual .containerVirtualText{
+	font-weight: bold;
+	font-size: 100px;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box {
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    background: #ccc;
+    /* transition: width 0.5s, height 0.5s; */
+		transition: transform 0.3s;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		margin: 10px auto;
+		border-radius: 20px;
+}
+.box:hover {
+	width: 430px;
+	height: 160%;
+	background: #ccc;
+	text-align: left;
+	transform: scale(1.1);
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 20px;
+	border-radius: 30px;
+	padding: 20px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/signIn.css">
+</head>
+
+<body>
+    <div class="signInBox">
+        <div class="signInContent">
+            <div class="signInContentLift">
+                <div class="title">Sign In</div>
+                <div class="username">
+                    Username
+                </div>
+                <div class="usernameBox">
+                    <input type="text" value="example@email.com">
+                    <div></div>
+                </div>
+                <div class="password">
+                    Password
+                </div>
+                <div class="usernameBox">
+                    <input type="text" value="**********">
+                    <div class="passIcon"></div>
+                </div>
+                <a href="">Forgot Password?</a>
+                <div class="SignButton">
+                    Sign In
+                </div>
+
+                <p>Don't have an account?<a class="SingA">Sing up</a></p>
+                <div onclick="goBack()" class="back">
+                    Back
+                </div>
+
+            </div>
+            <div>
+                <img src="./image/signin.png" alt="" width="600px" height="600px">
+            </div>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
